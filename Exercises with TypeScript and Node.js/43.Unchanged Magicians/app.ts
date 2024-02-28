@@ -1,44 +1,20 @@
-function show_magicians(magicians: string[]): void {
-  for (const magician of magicians) {
-    console.log(magician.charAt(0).toUpperCase() + magician.slice(1));
-  }
-}
-
-const magician: string[] = [  "Ali", "Owais", "Raza"];
-show_magicians(magician);
-
-
-
-
-
-
-
-
-
-function makeGreat(magicians: string[]): string[] {
-  const greatMagicians: string[] = [];
-  for (const magician of magicians) {
-    greatMagicians.push(`the Great ${magician}`);
-  }
-  return greatMagicians;
-}
-
-function showMagicians(magicians: string[]) {
-  for (const magician of magicians) {
+function show_magicians(magicians: string[]) {
+  magicians.forEach(magician => {
     console.log(magician);
-  }
+  });
 }
 
-// Original list of magicians
-const magicians: string[] = ["Ali", "Owais", "Raza"];
+function make_great(magicians: string[], great_magicians: string[]) {
+  magicians.forEach((magician, index) => {
+    great_magicians[index] = "The Great " + magician;
+  });
+}
 
-// Create a copy of the original list
-const greatMagicians = makeGreat([...magicians]); // Use spread syntax for copying
+const magicians: string[] = ['Merlin', 'Houdini', 'David Copperfield'];
 
-// Show the original list
-console.log("Original magicians:");
-showMagicians(magicians);
+const great_magicians: string[] = [];
 
-// Show the list with modified names
-console.log("\nGreat magicians:");
-showMagicians(greatMagicians);
+make_great(magicians, great_magicians);
+
+show_magicians(magicians);
+show_magicians(great_magicians);

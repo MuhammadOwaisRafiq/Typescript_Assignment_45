@@ -1,8 +1,9 @@
-function show_magicians(magicians: string[]): void {
-  for (const magician of magicians) {
-    console.log(magician.charAt(0).toUpperCase() + magician.slice(1));
-  }
+function show_magicians(magicians: string[]) {
+  magicians.forEach((magician) => {
+    console.log(magician);
+  });
 }
 
-const magician: string[] = [  "Ali", "Owais", "Raza"];
-show_magicians(magician);
+const magicians: string[] = ["Merlin", "Houdini", "David Copperfield"];
+
+show_magicians(magicians);

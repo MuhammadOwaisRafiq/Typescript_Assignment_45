@@ -1,8 +1,8 @@
 "use strict";
 function show_magicians(magicians) {
-    for (const magician of magicians) {
-        console.log(magician.charAt(0).toUpperCase() + magician.slice(1));
-    }
+    magicians.forEach((magician) => {
+        console.log(magician);
+    });
 }
-const magician = ["Ali", "Owais", "Raza"];
-show_magicians(magician);
+const magicians = ["Merlin", "Houdini", "David Copperfield"];
+show_magicians(magicians);
