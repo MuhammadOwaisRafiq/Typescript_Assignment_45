@@ -4,5 +4,5 @@ function show_magicians(magicians) {
         console.log(magician);
     });
 }
-const magicians = ["Merlin", "Houdini", "David Copperfield"];
+const magicians = ["Owais", "Rafiq", "Meraj"];
 show_magicians(magicians);

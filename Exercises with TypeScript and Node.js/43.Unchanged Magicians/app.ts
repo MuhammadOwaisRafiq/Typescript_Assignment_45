@@ -1,5 +1,5 @@
 function show_magicians(magicians: string[]) {
-  magicians.forEach(magician => {
+  magicians.forEach((magician) => {
     console.log(magician);
   });
 }
@@ -10,7 +10,7 @@ function make_great(magicians: string[], great_magicians: string[]) {
   });
 }
 
-const magicians: string[] = ['Merlin', 'Houdini', 'David Copperfield'];
+const magicians: string[] = ["Owais", "Rafiq", "Meraj"];
 
 const great_magicians: string[] = [];
 
